@@ -14,7 +14,7 @@ import {getFirestore} from "firebase/firestore";
 
 // Importing firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCV8KCcdv_ioyxP31Sj2UiJr7F_imj4d6o",
+  apiKey: "",
   authDomain: "soycenabastos-live-map-demoweb.firebaseapp.com",
   databaseURL: "https://soycenabastos-live-map-demoweb-default-rtdb.firebaseio.com",
   projectId: "soycenabastos-live-map-demoweb",
@@ -176,4 +176,5 @@ var circle= L.circle([7.925070364711516,-72.49282147971168,16], {
 
 function onMapClick(latitud) {
     alert("Has dado click en latitud: " + latitud.latlng.lat +" y longitud:" + latitud.latlng.lng );
+
 } map.on('click', onMapClick);
