@@ -1,0 +1,81 @@
+{
+  "expo": {
+    "name": "CenaTrack",
+    "slug": "CenaTrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/cenatrackLogo.png",
+    "scheme": "cenatrack",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyBobHY7FpD-fYkWq5lPpufo5sSGYQ25hVY"
+      },
+      "bundleIdentifier": "com.company.cenatrack",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "package": "com.company.cenatrack",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/cenatrack1.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBobHY7FpD-fYkWq5lPpufo5sSGYQ25hVY"
+        }
+      },
+      "splash": {
+        "image": "./assets/images/cenatrack1.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ffffff"
+      },
+      "runtimeVersion": "1.0.0"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://cenatrack.com/"
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/cenatrack_splash_white.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#ffffff",
+          "splashFullScreen": true
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": "https://cenatrack.com/"
+      },
+      "eas": {
+        "projectId": "9b12cec3-db1f-416f-80a6-082a33b0e6cb"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/9b12cec3-db1f-416f-80a6-082a33b0e6cb"
+    }
+  }
+}
